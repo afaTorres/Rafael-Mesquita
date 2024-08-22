@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flix - Recomendação de Vídeos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main-video {
+            display: flex;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .main-video iframe {
+            width: 60%;
+            height: 360px;
+        }
+        .video-info {
+            padding: 20px;
+            width: 40%;
+            box-sizing: border-box;
+        }
+        .video-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
+        .video-info p {
+            font-size: 16px;
+            color: #333;
+        }
+        .recommendations {
+            margin-top: 20px;
+        }
+        .recommendations h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .recommendation-item {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .recommendation-item iframe {
+            width: 30%;
+            height: 180px;
+        }
+        .recommendation-info {
+            padding: 10px;
+            width: 70%;
+            box-sizing: border-box;
+        }
+        .recommendation-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+        .recommendation-info p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Flix
+    </div>
+    <div class="container">
+        <!-- Vídeo Principal -->
+        <div class="main-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo Principal" frameborder="0" allowfullscreen></iframe>
+            <div class="video-info">
+                <h1>Nome do Vídeo Principal</h1>
+                <p>Descrição do vídeo principal que está sendo exibido. Aqui você pode colocar uma breve descrição sobre o que o vídeo aborda e outros detalhes importantes.</p>
+            </div>
+        </div>
+
+        <!-- Recomendações -->
+        <div class="recommendations">
+            <h2>Vídeos Recomendados</h2>
+            <div class="recommendation-item">
+                <iframe src="https://www.youtube.com/embed/3tmd-ClpJxA" title="Vídeo Recomendado 1" frameborder="0" allowfullscreen></iframe>
+                <div class="recommendation-info">
+                    <h3>Nome do Vídeo Recomendado 1</h3>
+                    <p>Breve descrição do vídeo recomendado 1.</p>
+                </div>
+            </div>
+            <div class="recommendation-item">
+                <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="Vídeo Recomendado 2" frameborder="0" allowfullscreen></iframe>
+                <div class="recommendation-info">
+                    <h3>Nome do Vídeo Recomendado 2</h3>
+                    <p>Breve descrição do vídeo recomendado 2.</p>
+                </div>
+            </div>
+            <!-- Adicione mais itens de recomendação conforme necessário -->
+        </div>
+    </div>
+</body>
+</html>
